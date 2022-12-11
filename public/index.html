@@ -7,10 +7,70 @@
     <link rel="stylesheet" href="/dist/styles.css">
     <title>Revan's WebSite</title>
 </head>
-<body class="bg-black">
-    <h1 class="text-white">
-        Home
-    </h1>
-    
+<body class="bg-background w-screen h-screen">
+
+    <nav class="shadow-lg">
+        <div class="max-w-6xl mx-auto mr-2 px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <!-- Website Logo -->
+                        <a href="#" class="flex items-center py-4 px-2">
+                            <img src="/img/logo.png" alt="Logo" class="h-28 w-28 mr-2">
+                        </a>
+                    </div>
+                    <!-- Primary Navbar items -->
+                    <div class="hidden md:flex items-center space-x-1">
+                        <a href="" class="py-4 px-2 text-yellow font-special font-semibold transition duration-300">Services</a>
+                        <a href="" class="py-4 px-2 text-yellow font-special font-semibold transition duration-300">Services</a>
+                        <a href="" class="py-4 px-2 text-yellow font-special font-semibold transition duration-300">Services</a>
+                        <a href="" class="py-4 px-2 text-yellow font-special font-semibold transition duration-300">Services</a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center text-yellow">
+                    <button class="outline-none mobile-menu-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                </button>
+                </div>
+            </div>
+        </div>
+        <!-- mobile menu -->
+        <div class="mr-2 hidden mobile-menu">
+            <ul class="">
+                <li class="active"><a href="index.html" class="text-right block text-sm px-2 py-4 text-yellow font-special font-semibold">Home</a></li>
+                <li class=""><a href="index.html" class="text-right block text-sm px-2 py-4 text-yellow font-special font-semibold">Home</a></li>
+                <li class=""><a href="index.html" class="text-right block text-sm px-2 py-4 text-yellow font-special font-semibold">Home</a></li>
+                <li class=""><a href="index.html" class="text-right block text-sm px-2 py-4 text-yellow font-special font-semibold">Home</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <button id="previous-slide-button" class="px-4 py-2 text-yellow hover:bg-white focus:outline-dashed focus:bg-white">Previous slide</button>
+    <button id="next-slide-button" class="relative px-4 py-2 text-white hover:bg-white focus:outline-dashed focus:bg-white">Next slide</button>
+
+        <div id="page-slider" class="w-full h-full">
+
+            <div class="absolute w-full h-full bg-primary transition-transform duration-1200 ease-in-out">
+                SLIDE 1
+            </div>
+
+            <div class="absolute w-full h-full bg-danger transition-transform duration-1200 ease-in-out">
+                SLIDE 2
+            </div>
+            
+            <div class="absolute w-full h-full bg-yellow transition-transform duration-1200 ease-in-out">
+                SLIDE 3
+            </div>
+
+            
+
+        </div>
+
 </body>
+
+<script src="./scripts/slider.js"></script>
 </html>
