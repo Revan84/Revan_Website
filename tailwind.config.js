@@ -16,12 +16,20 @@ module.exports = {
       success: '#28a745',
       danger: '#dc3545',
       warning: '#ffc107',
-      background: '#22162B',
-      menubg: '#131014',
+      background: '#18141B',
+      menubg: '#101014',
+      opa0: '#00000000',
+    },
+    dropShadow: {
+      border: '0 0 3px #F8C630'
     },
     fontFamily: {
       special: [
         'Orbitron',
+        'sans-serif',
+      ],
+      special2: [
+        'Uncial Antiqua',
         'sans-serif',
       ],
       sans: [
@@ -44,6 +52,16 @@ module.exports = {
         'Cambria',
       ],
     },
+    extend: {
+      backgroundImage: {
+      },
+      height: {
+        '1/10': '8%'
+      },
+      width: {
+        '9/10': '92%'
+      }
+    }
   },
   plugins: [],
 }

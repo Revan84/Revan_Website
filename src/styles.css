@@ -2,6 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-a[href="#"] {
-    display: none;
-  }
+.lse {
+    font-family: 'Uncial Antiqua', cursive;
+}
+
+.text {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.slider .page .slide
+{
+    opacity: 0;
+}
+
+.slider .page .slide.active
+{
+    opacity: 1;
+}
+
+a.active
+{
+    text-decoration: underline;
+}
